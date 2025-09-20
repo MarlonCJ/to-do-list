@@ -1,0 +1,135 @@
+
+:root{
+    --color1: #073b4c;
+    --white: white;
+    --agregar : #6da01c;
+    --modificar: #ff7d00;
+    --eliminar: #9e141b;
+    --eliminar2: #c81d25;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: var(--white);
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.main{
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--white);
+    min-height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.301);
+}
+
+.formulario{
+    /* padding: 10px; */
+    margin-bottom: 20px;
+}
+
+.inputTarea{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--color1);
+    width: 60%;
+}
+
+.inputTarea:focus{
+    outline: none;
+    border: 1px solid var(--modificar);
+}
+
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th,td{
+    border: 1px solid var(--color1);
+    padding: 5px 10px;
+}
+
+
+td:nth-child(1), th:nth-child(1){
+    width: 10%;
+    text-align: center;
+    
+}
+
+td:nth-child(2), th:nth-child(2){
+    width: 60%;
+}
+
+td:nth-child(3), th:nth-child(3){
+    width: 30%;
+    text-align: center;
+}
+
+thead tr:first-child{
+    background-color: var(--color1);
+    color: var(--white);
+}
+
+tr:nth-child(odd){
+    background-color: var(--white);
+}
+
+.boton{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.btnAgregar{
+    background-color: var(--color1);
+    color: var(--white);
+    
+}
+
+.btnAgregar:hover{
+    background-color: #6da01c;
+}
+
+.btnModificar{
+    background-color: var(--color1);
+    color: var(--white);
+}
+
+.btnModificar:hover{
+    background-color: var(--modificar);
+}
+
+.btnEliminar{
+    background-color: var(--eliminar);
+    color: white;
+}
+
+.btnEliminar:hover{
+    background-color: var(--eliminar2);
+}
